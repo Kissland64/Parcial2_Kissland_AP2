@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 interface SistemaDao {
 
     @Upsert
-    suspend fun upsert(sistema: SistemaEntity)
+    suspend fun guardar(sistema: SistemaEntity)
 
     @Delete
     suspend fun delete(sistema: SistemaEntity)

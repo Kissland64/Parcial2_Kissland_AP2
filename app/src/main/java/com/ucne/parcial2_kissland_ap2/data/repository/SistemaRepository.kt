@@ -8,8 +8,8 @@ import javax.inject.Inject
 class SistemaRepository @Inject constructor(
     private val sistemaDao: SistemaDao
 ) {
-    suspend fun upsert(sistemaEntity: SistemaEntity) {
-        sistemaDao.upsert(sistemaEntity)
+    suspend fun guardar(sistemaEntity: SistemaEntity) {
+        sistemaDao.guardar(sistemaEntity)
     }
 
     suspend fun delete(sistemaEntity: SistemaEntity) {
