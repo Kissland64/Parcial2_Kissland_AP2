@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.fillMaxSize()
                     ) {
                         composable("registro") {
-                            //RegistroScreen()
+                            //SistemaScreen()
                         }
                         composable("Consulta") {
                             //Consulta()
