@@ -26,6 +26,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ucne.parcial2_kissland_ap2.ui.theme.Parcial2_Kissland_AP2Theme
+import com.ucne.parcial2_kissland_ap2.ui.theme.registro.SistemaScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -91,7 +92,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier.fillMaxSize()
                     ) {
                         composable("registro") {
-                            //SistemaScreen()
+                            SistemaScreen()
                         }
                         composable("Consulta") {
                             //Consulta()
