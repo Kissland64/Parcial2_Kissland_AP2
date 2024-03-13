@@ -12,20 +12,17 @@ import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.key.Key.Companion.Home
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ucne.parcial2_kissland_ap2.ui.theme.Parcial2_Kissland_AP2Theme
+import com.ucne.parcial2_kissland_ap2.ui.theme.consulta.Consulta
 import com.ucne.parcial2_kissland_ap2.ui.theme.registro.SistemaScreen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -88,14 +85,14 @@ class MainActivity : ComponentActivity() {
                 {
                     NavHost(
                         navController = navController,
-                        startDestination = "registro",
+                        startDestination = "consulta",
                         modifier = Modifier.fillMaxSize()
                     ) {
                         composable("registro") {
                             SistemaScreen()
                         }
-                        composable("Consulta") {
-                            //Consulta()
+                        composable("consulta") {
+                            Consulta(navController = navController)
                         }
                     }
                 }
